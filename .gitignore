@@ -1,0 +1,8 @@
+.ipynb_checkpoints
+__pycache__
+**/.DS_Store
+matches/
+/*.ipynb
+datasets/Aachen-Day-Night
+datasets/hpatches/hpatches-sequences-release
+datasets/ivd

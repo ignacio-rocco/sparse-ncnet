@@ -1,0 +1,7 @@
+This dataset should contain the following folders (or symlinks to them)
+
+./ivd: Indoor-venue dataset (for training)
+./hpatches/hpatches-sequences-release - HPatches dataset (for evaluation)
+./hpatches/caches - precomputed curves for evaluation on HPatches
+./Aachen-Day-Night - Aachen Day-Night dataset (for evaluation)
+./inloc: InLoc dataset (for evaluation)
