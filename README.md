@@ -1,7 +1,7 @@
 # Sparse Neighbourhood Consensus Networks
 
 ## About
-This is the implementation of the paper "Efficient Neighbourhood Consensus Networks via Submanifold Sparse Convolutions" by Ignacio Rocco, Relja Arandjelović and Josef Sivic [[arXiv](https://arxiv.org/abs/20XX.XXXXX)].
+This is the implementation of the paper "Efficient Neighbourhood Consensus Networks via Submanifold Sparse Convolutions" by Ignacio Rocco, Relja Arandjelović and Josef Sivic [[arXiv](https://arxiv.org/abs/2004.10566)].
 
 ## Installation
 For installation instructions, please see [INSTALL.md](INSTALL.md).
@@ -40,4 +40,17 @@ python eval_aachen_reconstruct.py
 	--method_name experiment_name
 ```
 4. Upload the file `/path_to_aachen/aachen/Aachen_eval_[experiment_name].txt` to `https://www.visuallocalization.net/` to get the results on this benchmark.
+
+## BibTeX 
+
+If you use this code in your project, please cite our paper:
+
+````
+@article{Rocco20,
+        author       = "Rocco, I. and Arandjelovi\'c, R. and Sivic, J."
+        title        = "Efficient Neighbourhood Consensus Networks via Submanifold Sparse Convolutions",
+        journal      = "arXiv preprint arXiv:2004.10566",
+        year         = "2020",
+        }
+````
 
