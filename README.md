@@ -1,5 +1,7 @@
 # Sparse Neighbourhood Consensus Networks
 
+![](https://www.di.ens.fr/willow/research/sparse-ncnet/images/teaser.jpg)
+
 ## About
 This is the implementation of the paper "Efficient Neighbourhood Consensus Networks via Submanifold Sparse Convolutions" by Ignacio Rocco, Relja Arandjelović and Josef Sivic [[arXiv](https://arxiv.org/abs/2004.10566)].
 
