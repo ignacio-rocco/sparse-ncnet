@@ -5,7 +5,7 @@ This project depends on the following main libraries: `pytorch>=1.3`, `faiss-gpu
 One possible way to install these three libraries (and some other relevant ones) on Linux-64 through Anaconda and Pip is by using the following commands:
 
 ```
-# create new environemnt and install compiler and other tools
+# create new environment and install compiler and other tools
 conda create -n sparsencnet python=3.6.9=h265db76_0
 conda activate sparsencnet
 conda install gcc-5 -c psi4
