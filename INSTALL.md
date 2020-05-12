@@ -26,7 +26,7 @@ pip install torch torchvision
 pip install -U MinkowskiEngine # compilation may take a while
 
 # download cuda8 runtime libs which are required by faiss-gpu. As the dependencies for the faiss-gpu package are broken we do this manually.
-conda install https://anaconda.org/anaconda/cudatoolkit/8.0/download/linux-64/cudatoolkit-8.0-3.tar.bz2
+conda install https://repo.anaconda.com/pkgs/free/linux-64/cudatoolkit-8.0-3.tar.bz2
 conda install --force --no-deps faiss-gpu=1.4.0=py36_cuda8.0.61_1 -c pytorch
 
 # install some additional libraries
