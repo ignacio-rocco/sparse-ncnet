@@ -15,7 +15,7 @@ from lib.normalization import imreadth, resize, normalize
 from lib.torch_util import str_to_bool
 from lib.point_tnf import normalize_axis,unnormalize_axis,corr_to_matches
 from lib.sparse import get_matches_both_dirs, torch_to_me, me_to_torch, unique
-from lib.relocalize import relocalize, relocalize_soft, relocalize_optim, eval_model_reloc
+from lib.relocalize import relocalize, relocalize_soft, eval_model_reloc
 
 import numpy as np
 import numpy.random
@@ -178,10 +178,6 @@ for seq_name in seq_names_chunk:
             # relocalization stage 2:
             if args.reloc_type=='hard_soft':
                 xA_, yA_, xB_, yB_, score_ = relocalize_soft(xA_,yA_,xB_,yB_,score_,feature_A_2x, feature_B_2x, upsample_positions=False)
-                
-#             elif args.reloc_type=='hard_optim':
-#                 xA_, yA_, xB_, yB_, score_ = relocalize(xA_,yA_,xB_,yB_,score_,feature_A_2x, feature_B_2x)
-#                 xA_, yA_, xB_, yB_, score_ = relocalize_optim(xA_,yA_,xB_,yB_,score_,feature_A_2x, feature_B_2x, upsample_positions=False)
             
             elif args.reloc_type=='hard_hard':
                 xA_, yA_, xB_, yB_, score_ = relocalize(xA_,yA_,xB_,yB_,score_,feature_A_2x, feature_B_2x, upsample_positions=False)
