@@ -131,14 +131,6 @@ def relocalize_soft(xA_,yA_,xB_,yB_,score_, feature_A_2x, feature_B_2x, N_matche
     
     return xA_, yA_, xB_, yB_, score_
 
-def loss_fn(w1,w2,feature_A_local, feature_B_local):
-    w1 = torch.relu(w1)/torch.relu(w1).sum(dim=3,keepdim=True).sum(dim=2,keepdim=True)
-    w2 = torch.relu(w2)/torch.relu(w2).sum(dim=3,keepdim=True).sum(dim=2,keepdim=True)
-    feature_A_weighted = (w1*feature_A_local).sum(dim=3).sum(dim=2)
-    feature_B_weighted = (w2*feature_B_local).sum(dim=3).sum(dim=2)
-    loss = ((feature_A_weighted-feature_B_weighted)**2).sum(dim=1).mean()
-    return loss
-
 # redefine forward function for evaluation with relocalization
 def eval_model_reloc(model, batch, args=None):
     
