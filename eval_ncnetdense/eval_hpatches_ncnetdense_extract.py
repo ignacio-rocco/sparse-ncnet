@@ -7,6 +7,8 @@ import os
 from os.path import exists, join, basename
 from collections import OrderedDict
 
+import sys
+sys.path.append('..')
 
 from lib.model import ImMatchNet, MutualMatching
 from lib.normalization import NormalizeImageDict
@@ -29,11 +31,11 @@ use_cuda = torch.cuda.is_available()
 # Argument parsing
 parser = argparse.ArgumentParser()
 
-parser.add_argument('--checkpoint', type=str, default='trained_models/ncnet_ivd.pth.tar')
-parser.add_argument('--hseq_path', type=str, default='dataset/hpatches/hpatches-sequences-release')
+parser.add_argument('--checkpoint', type=str, default='../trained_models/ncnet_ivd.pth.tar')
+parser.add_argument('--hseq_path', type=str, default='../datasets/hpatches/hpatches-sequences-release')
 parser.add_argument('--k_size', type=int, default=2)
-parser.add_argument('--image_size', type=int, default=3200)
-parser.add_argument('--softmax', type=str_to_bool, default=True)
+parser.add_argument('--image_size', type=int, default=1600)
+parser.add_argument('--softmax', type=str_to_bool, default=False)
 parser.add_argument('--matching_both_directions', type=str_to_bool, default=True)
 parser.add_argument('--flip_matching_direction', type=str_to_bool, default=False)
 parser.add_argument('--experiment_name', type=str, default='ncnet_resnet101_3200k2_softmax0')
@@ -42,7 +44,7 @@ parser.add_argument('--nchunks', type=int, default=1)
 parser.add_argument('--chunk_idx', type=int, default=0)
 parser.add_argument('--skip_up_to', type=str, default='')
 parser.add_argument('--feature_extraction_cnn', type=str, default='resnet101')
-parser.add_argument('--change_stride', type=int, default=0)
+parser.add_argument('--change_stride', type=int, default=1)
 parser.add_argument('--benchmark', type=int, default=0)
 
 args = parser.parse_args()

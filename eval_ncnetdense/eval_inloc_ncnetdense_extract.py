@@ -13,6 +13,9 @@ from scipy.io import loadmat
 from scipy.io import savemat
 import matplotlib.pyplot as plt
 
+import sys
+sys.path.append('..')
+
 from lib.model import ImMatchNet,MutualMatching
 from lib.normalization import NormalizeImageDict
 from lib.torch_util import str_to_bool

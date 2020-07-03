@@ -3,7 +3,7 @@
 ![](https://www.di.ens.fr/willow/research/sparse-ncnet/images/teaser.jpg)
 
 ## About
-This is the implementation of the paper "Efficient Neighbourhood Consensus Networks via Submanifold Sparse Convolutions" by Ignacio Rocco, Relja Arandjelović and Josef Sivic [[arXiv](https://arxiv.org/abs/2004.10566)].
+This is the implementation of the paper "Efficient Neighbourhood Consensus Networks via Submanifold Sparse Convolutions" by Ignacio Rocco, Relja Arandjelović and Josef Sivic, accepted to ECCV 2020 [[arXiv](https://arxiv.org/abs/2004.10566)].
 
 ## Installation
 For installation instructions, please see [INSTALL.md](INSTALL.md).
@@ -48,10 +48,10 @@ python eval_aachen_reconstruct.py
 If you use this code in your project, please cite our paper:
 
 ````
-@article{Rocco20,
+@inproceedings{Rocco20,
         author       = "Rocco, I. and Arandjelovi\'c, R. and Sivic, J."
         title        = "Efficient Neighbourhood Consensus Networks via Submanifold Sparse Convolutions",
-        journal      = "arXiv preprint arXiv:2004.10566",
+        booktitle    = "European Conference on Computer Vision",
         year         = "2020",
         }
 ````
