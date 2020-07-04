@@ -49,10 +49,10 @@ If you use this code in your project, please cite our paper:
 
 ````
 @inproceedings{Rocco20,
-        author       = "Rocco, I. and Arandjelovi\'c, R. and Sivic, J."
+        author       = "Rocco, I. and Arandjelovi\'c, R. and Sivic, J.",
         title        = "Efficient Neighbourhood Consensus Networks via Submanifold Sparse Convolutions",
         booktitle    = "European Conference on Computer Vision",
-        year         = "2020",
+        year         = 2020,
         }
 ````
 
